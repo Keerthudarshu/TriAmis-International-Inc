@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TriAmis International Inc</title>
+    <meta name="description" content="Get in touch with TriAmis International Inc. Email: triamisinternational@gmail.com, Phone: +91 91641 65882. Ready to start your sourcing journey?">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TriAmis International Inc</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Ready to start your sourcing journey? Get in touch with our team of experts today.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="service-content">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+                <!-- Contact Form -->
+                <div>
+                    <h2 style="color: #1e40af; margin-bottom: 2rem; font-size: 2rem;">Send Us a Message</h2>
+                    <form class="contact-form" id="contactForm" onsubmit="submitContactForm(event)">
+                        <div class="success-message"></div>
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <div class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name *</label>
+                            <input type="text" id="company" name="company" required>
+                            <div class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interest *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="pharmaceuticals">Pharmaceuticals & Chemicals</option>
+                                <option value="textiles">Textiles & Apparel</option>
+                                <option value="home-lifestyle">Home & Lifestyle</option>
+                                <option value="gems-jewelry">Gems & Jewelry</option>
+                                <option value="agriculture">Agriculture & Food Products</option>
+                                <option value="industrial">Industrial Goods & Machinery</option>
+                                <option value="automobiles">Automobiles & Components</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="metals">Metals & Materials</option>
+                                <option value="multiple">Multiple Services</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Please describe your sourcing requirements, quantity needed, timeline, and any specific quality standards..." required></textarea>
+                            <div class="error-message"></div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <h2 style="color: #1e40af; margin-bottom: 2rem; font-size: 2rem;">Get in Touch</h2>
+                    
+                    <div style="background: #f8fafc; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
+                        <h3 style="color: #1e40af; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-envelope"></i> Email Us
+                        </h3>
+                        <p style="color: #64748b; margin-bottom: 0.5rem;">Primary Contact:</p>
+                        <a href="mailto:triamisinternational@gmail.com" style="color: #2563eb; text-decoration: none; font-weight: 600; font-size: 1.1rem;">triamisinternational@gmail.com</a>
+                    </div>
+
+                    <div style="background: #f8fafc; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
+                        <h3 style="color: #1e40af; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-phone"></i> Call Us
+                        </h3>
+                        <p style="color: #64748b; margin-bottom: 0.5rem;">Phone Number:</p>
+                        <a href="tel:+919164165882" style="color: #2563eb; text-decoration: none; font-weight: 600; font-size: 1.1rem;">+91 91641 65882</a>
+                    </div>
+
+                    <div style="background: #f8fafc; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
+                        <h3 style="color: #1e40af; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-clock"></i> Business Hours
+                        </h3>
+                        <div style="color: #64748b;">
+                            <p style="margin-bottom: 0.5rem;"><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM IST</p>
+                            <p style="margin-bottom: 0.5rem;"><strong>Saturday:</strong> 9:00 AM - 1:00 PM IST</p>
+                            <p><strong>Sunday:</strong> Closed</p>
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; padding: 2rem; border-radius: 10px;">
+                        <h3 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-lightbulb"></i> Quick Response
+                        </h3>
+                        <p style="margin-bottom: 1rem; opacity: 0.9;">We typically respond to all inquiries within 24 hours during business days.</p>
+                        <p style="opacity: 0.9;">For urgent requests, please call us directly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Information -->
+            <div style="margin-top: 4rem;">
+                <h2 style="text-align: center; color: #1e40af; margin-bottom: 3rem; font-size: 2.5rem;">Why Contact Us?</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); border-left: 4px solid #2563eb;">
+                        <h4 style="color: #1e40af; margin-bottom: 1rem; font-size: 1.2rem;">Free Consultation</h4>
+                        <p style="color: #64748b; line-height: 1.6;">Get expert advice on your sourcing needs with no obligation. Our team will help you understand the best options for your requirements.</p>
+                    </div>
+                    <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); border-left: 4px solid #10b981;">
+                        <h4 style="color: #1e40af; margin-bottom: 1rem; font-size: 1.2rem;">Custom Solutions</h4>
+                        <p style="color: #64748b; line-height: 1.6;">Every business is unique. We'll work with you to create tailored sourcing solutions that meet your specific needs and budget.</p>
+                    </div>
+                    <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); border-left: 4px solid #f59e0b;">
+                        <h4 style="color: #1e40af; margin-bottom: 1rem; font-size: 1.2rem;">Market Insights</h4>
+                        <p style="color: #64748b; line-height: 1.6;">Benefit from our 15+ years of experience and deep knowledge of Indian markets, manufacturers, and industry trends.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location -->
+            <div style="margin-top: 4rem; text-align: center;">
+                <h2 style="color: #1e40af; margin-bottom: 2rem; font-size: 2rem;">Our Location</h2>
+                <div style="background: #f8fafc; padding: 3rem; border-radius: 15px;">
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 2rem;">
+                        <i class="fas fa-map-marker-alt" style="color: #2563eb; font-size: 2rem;"></i>
+                        <div>
+                            <h3 style="color: #1e40af; margin-bottom: 0.5rem;">India</h3>
+                            <p style="color: #64748b;">Serving clients worldwide from our base in India</p>
+                        </div>
+                    </div>
+                    <p style="color: #64748b; max-width: 600px; margin: 0 auto; line-height: 1.6;">
+                        Strategically located in India, we have direct access to the country's vast manufacturing network and can provide you with the best sourcing solutions across all major industrial sectors.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Let's Start Your Sourcing Journey</h2>
+            <p>Contact us today and discover how TriAmis International Inc can help you access India's best manufacturers and products.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="mailto:triamisinternational@gmail.com" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Email Us
+                </a>
+                <a href="tel:+919164165882" class="btn btn-secondary" style="background: transparent; color: white; border-color: white;">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TriAmis International Inc</h3>
+                    <p>Your trusted sourcing partner in India. We're here to meet your sourcing needs — efficiently, reliably, and professionally.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="pharmaceuticals.html">Pharmaceuticals</a></li>
+                        <li><a href="textiles.html">Textiles</a></li>
+                        <li><a href="gems-jewelry.html">Gems & Jewelry</a></li>
+                        <li><a href="agriculture.html">Agriculture</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> triamisinternational@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +91 91641 65882</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TriAmis International Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
