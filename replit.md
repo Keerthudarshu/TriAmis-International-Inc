@@ -7,6 +7,8 @@ TriAmis International Inc is a static business website for a sourcing company th
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Color scheme: Updated to match company logo - Orange (#f97316), Navy Blue (#1e3a8a), and Light Blue (#dbeafe)
+Logo: Company logo integrated across all pages replacing text-based branding
 
 ## System Architecture
 
@@ -93,6 +95,18 @@ Preferred communication style: Simple, everyday language.
 - **Analytics Integration**: User behavior tracking and conversion monitoring
 - **Progressive Web App**: Service worker for offline functionality
 
+## Recent Changes
+
+### July 26, 2025 - Logo Integration and Color Scheme Update
+- **Logo Integration**: Replaced text-based logo with actual company logo image across all pages
+- **Color Scheme Update**: Updated entire website color palette to match company branding:
+  - Primary Blue: #1e3a8a (navy blue from logo)
+  - Accent Orange: #f97316 (orange from logo) 
+  - Light Blue: #dbeafe (complementary light blue)
+  - Updated buttons, links, icons, and highlights to use new color scheme
+- **JavaScript Fix**: Resolved variable naming conflict in image modal function
+- **Back-to-top Button**: Updated to use new orange color scheme
+
 ## Technical Notes
 
-The website currently uses incomplete content in several files (text appears to be cut off in many product pages). The contact form is structured but requires backend functionality for actual form submission processing. The design follows modern web standards with clean, professional styling suitable for a B2B sourcing company.
+The website uses modern CSS custom properties (CSS variables) for consistent color theming. The contact form is structured but requires backend functionality for actual form submission processing. The design follows modern web standards with clean, professional styling suitable for a B2B sourcing company, now fully branded with company colors and logo.

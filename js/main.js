@@ -247,8 +247,8 @@ function openImageModal(src, caption) {
         object-fit: contain;
     `;
     
-    const caption = modal.querySelector('.modal-caption');
-    caption.style.cssText = `
+    const modalCaption = modal.querySelector('.modal-caption');
+    modalCaption.style.cssText = `
         color: white;
         margin-top: 20px;
         font-size: 18px;
@@ -283,8 +283,8 @@ document.addEventListener('DOMContentLoaded', function() {
     galleryItems.forEach(img => {
         img.style.cursor = 'pointer';
         img.addEventListener('click', function() {
-            const caption = this.alt || 'Image';
-            openImageModal(this.src, caption);
+            const imageCaption = this.alt || 'Image';
+            openImageModal(this.src, imageCaption);
         });
     });
 });
@@ -300,7 +300,7 @@ function createBackToTopButton() {
         right: 30px;
         width: 50px;
         height: 50px;
-        background: #2563eb;
+        background: #f97316;
         color: white;
         border: none;
         border-radius: 50%;
@@ -335,12 +335,12 @@ function createBackToTopButton() {
     
     // Hover effect
     button.addEventListener('mouseenter', () => {
-        button.style.background = '#1d4ed8';
+        button.style.background = '#ea580c';
         button.style.transform = 'translateY(-2px)';
     });
     
     button.addEventListener('mouseleave', () => {
-        button.style.background = '#2563eb';
+        button.style.background = '#f97316';
         button.style.transform = 'translateY(0)';
     });
 }
