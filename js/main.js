@@ -66,6 +66,23 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(item);
     });
 
+    // Windmill Animation for Services
+    const windmillObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('windmill-visible');
+            }
+        });
+    }, {
+        threshold: 0.2,
+        rootMargin: '0px 0px -100px 0px'
+    });
+
+    const windmillItems = document.querySelectorAll('.windmill-item');
+    windmillItems.forEach(item => {
+        windmillObserver.observe(item);
+    });
+
     // Navbar scroll effect
     window.addEventListener('scroll', function() {
         const navbar = document.querySelector('.navbar');
