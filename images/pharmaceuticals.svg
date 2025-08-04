@@ -1,0 +1,34 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pharmaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="200" fill="#f8fafc"/>
+  
+  <!-- Laboratory equipment -->
+  <rect x="50" y="80" width="60" height="80" fill="url(#pharmaGrad)" rx="5"/>
+  <rect x="55" y="85" width="50" height="70" fill="#dbeafe" rx="3"/>
+  
+  <!-- Test tubes -->
+  <circle cx="80" cy="110" r="15" fill="#f97316"/>
+  <circle cx="100" cy="120" r="12" fill="#1e3a8a"/>
+  <circle cx="120" cy="115" r="14" fill="#3b82f6"/>
+  
+  <!-- Pills and capsules -->
+  <ellipse cx="180" cy="100" rx="8" ry="12" fill="#f97316"/>
+  <ellipse cx="200" cy="105" rx="8" ry="12" fill="#1e3a8a"/>
+  <ellipse cx="220" cy="100" rx="8" ry="12" fill="#f97316"/>
+  
+  <!-- Molecular structure -->
+  <circle cx="160" cy="50" r="4" fill="#1e3a8a"/>
+  <circle cx="180" cy="40" r="4" fill="#f97316"/>
+  <circle cx="200" cy="50" r="4" fill="#1e3a8a"/>
+  <line x1="160" y1="50" x2="180" y2="40" stroke="#666" stroke-width="2"/>
+  <line x1="180" y1="40" x2="200" y2="50" stroke="#666" stroke-width="2"/>
+  
+  <!-- Medicine bottle -->
+  <rect x="240" y="90" width="25" height="40" fill="url(#pharmaGrad)" rx="3"/>
+  <rect x="242" y="85" width="21" height="8" fill="#f97316" rx="2"/>
+</svg>

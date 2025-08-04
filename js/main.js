@@ -17,6 +17,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 navMenu.classList.remove('active');
             });
         });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const isClickInsideNav = navMenu.contains(event.target);
+            const isClickOnHamburger = hamburger.contains(event.target);
+            
+            if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+
+        // Close mobile menu on escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && navMenu.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
     }
 
     // Smooth scrolling for anchor links
@@ -65,6 +84,33 @@ document.addEventListener('DOMContentLoaded', function() {
         item.classList.add('fade-in');
         observer.observe(item);
     });
+
+    // Windmill Animation for Services (disabled on mobile for performance)
+    const isMobile = window.innerWidth <= 768;
+    
+    if (!isMobile) {
+        const windmillObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('windmill-visible');
+                }
+            });
+        }, {
+            threshold: 0.2,
+            rootMargin: '0px 0px -100px 0px'
+        });
+
+        const windmillItems = document.querySelectorAll('.windmill-item');
+        windmillItems.forEach(item => {
+            windmillObserver.observe(item);
+        });
+    } else {
+        // On mobile, just make windmill items visible immediately
+        const windmillItems = document.querySelectorAll('.windmill-item');
+        windmillItems.forEach(item => {
+            item.classList.add('windmill-visible');
+        });
+    }
 
     // Navbar scroll effect
     window.addEventListener('scroll', function() {

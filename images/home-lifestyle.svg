@@ -1,0 +1,48 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="homeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="200" fill="#f8fafc"/>
+  
+  <!-- Decorative vase -->
+  <ellipse cx="80" cy="140" rx="15" ry="5" fill="#92400e"/>
+  <rect x="70" y="100" width="20" height="40" fill="url(#homeGrad)"/>
+  <ellipse cx="80" cy="100" rx="12" ry="4" fill="#f97316"/>
+  
+  <!-- Pattern on vase -->
+  <ellipse cx="80" cy="115" rx="8" ry="2" fill="#fbbf24"/>
+  <ellipse cx="80" cy="125" rx="8" ry="2" fill="#fbbf24"/>
+  
+  <!-- Incense sticks -->
+  <line x1="150" y1="60" x2="150" y2="120" stroke="#92400e" stroke-width="2"/>
+  <line x1="155" y1="55" x2="155" y2="120" stroke="#92400e" stroke-width="2"/>
+  <line x1="160" y1="58" x2="160" y2="120" stroke="#92400e" stroke-width="2"/>
+  
+  <!-- Smoke from incense -->
+  <path d="M150,60 Q155,50 150,45 Q145,40 150,35" stroke="#d1d5db" stroke-width="1" fill="none"/>
+  <path d="M155,55 Q160,45 155,40 Q150,35 155,30" stroke="#d1d5db" stroke-width="1" fill="none"/>
+  
+  <!-- Decorative lamp -->
+  <circle cx="220" cy="90" r="20" fill="#fbbf24"/>
+  <circle cx="220" cy="90" r="15" fill="#f59e0b"/>
+  <rect x="215" y="110" width="10" height="15" fill="#92400e"/>
+  <ellipse cx="220" cy="125" rx="8" ry="3" fill="#92400e"/>
+  
+  <!-- Handicraft pattern -->
+  <rect x="40" y="40" width="40" height="40" fill="#1e3a8a" rx="5"/>
+  <circle cx="50" cy="50" r="3" fill="#f97316"/>
+  <circle cx="70" cy="50" r="3" fill="#f97316"/>
+  <circle cx="50" cy="70" r="3" fill="#f97316"/>
+  <circle cx="70" cy="70" r="3" fill="#f97316"/>
+  <circle cx="60" cy="60" r="4" fill="#fbbf24"/>
+  
+  <!-- Textile pattern -->
+  <rect x="240" y="130" width="50" height="30" fill="#10b981" rx="3"/>
+  <rect x="245" y="135" width="8" height="20" fill="#34d399"/>
+  <rect x="257" y="135" width="8" height="20" fill="#34d399"/>
+  <rect x="269" y="135" width="8" height="20" fill="#34d399"/>
+  <rect x="281" y="135" width="8" height="20" fill="#34d399"/>
+</svg>
