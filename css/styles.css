@@ -311,6 +311,63 @@ body {
     gap: 2rem;
 }
 
+/* Windmill Animation */
+.windmill-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.windmill-item {
+    opacity: 0;
+    transform: translateY(50px) rotate(5deg);
+    transition: all 0.8s ease;
+}
+
+.windmill-item.windmill-visible {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+}
+
+.windmill-item:nth-child(1) { transition-delay: 0.1s; }
+.windmill-item:nth-child(2) { transition-delay: 0.2s; }
+.windmill-item:nth-child(3) { transition-delay: 0.3s; }
+.windmill-item:nth-child(4) { transition-delay: 0.4s; }
+.windmill-item:nth-child(5) { transition-delay: 0.5s; }
+.windmill-item:nth-child(6) { transition-delay: 0.6s; }
+
+@keyframes windmill-spin {
+    0% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-10px) rotate(2deg); }
+    50% { transform: translateY(0) rotate(0deg); }
+    75% { transform: translateY(-5px) rotate(-2deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+}
+
+.windmill-item:hover {
+    animation: windmill-spin 2s ease-in-out infinite;
+}
+
+/* Service Image Styling */
+.service-image {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--light-blue);
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-image img {
+    transform: scale(1.05);
+}
+
 .service-card {
     background: white;
     padding: 2rem;
@@ -504,6 +561,10 @@ body {
 
 .contact-info i {
     color: var(--accent-orange);
+}
+
+.whatsapp-icon {
+    color: #25D366 !important;
 }
 
 .footer-bottom {
