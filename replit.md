@@ -97,39 +97,6 @@ Logo: Company logo integrated across all pages replacing text-based branding
 
 ## Recent Changes
 
-### August 3, 2025 - Video Background and Windmill Animation Implementation
-- **Video Background**: Implemented fullscreen video background in hero section using uploaded MP4 file
-  - Added video overlay with company blue tint for better text readability
-  - Updated hero content styling for better contrast on video background
-  - Enhanced text with shadow effects for improved visibility
-- **Windmill Scroll Animation**: Added sophisticated windmill-style scrolling animation to services section
-  - Implemented scroll-triggered animations using Intersection Observer API
-  - Added staggered timing delays for each service card (0.1s to 0.6s)
-  - Created hover effects with gentle rotation and floating animation
-  - Services cards now fade in with rotation and translation effects
-- **Professional Service Images**: Integrated high-quality product photography for all service categories
-  - Replaced SVG illustrations with professional product images across entire website
-  - Added 9 category-specific images: pharmaceuticals, textiles, home lifestyle, gems & jewelry, agriculture, industrial machinery, automobiles, electronics, and metals
-  - Applied images to index page, services page, and all individual service detail pages
-  - Updated all gallery sections in individual service pages with professional product photography
-  - Implemented image hover effects with scale transformation
-  - Enhanced visual appeal with realistic industry representation throughout website
-- **Enhanced Services Page**: Applied windmill scroll effects to services page
-  - Extended windmill animations to services.html page
-  - Added consistent image styling across all service cards
-  - Maintained responsive design and accessibility features
-- **Migration to Replit**: Successfully migrated project from Replit Agent to standard Replit environment
-  - Installed Python 3.11 environment for static file serving
-  - Configured HTTP server workflow on port 5000
-  - Verified all assets and functionality working correctly
-- **Comprehensive Mobile Responsiveness**: Implemented complete mobile responsive design for all devices
-  - Enhanced mobile navigation with improved hamburger menu functionality
-  - Optimized service cards, gallery, footer, and about section layouts for mobile
-  - Added responsive breakpoints for small mobile (480px), tablet (768px), and large tablet (992px)
-  - Improved button sizing, text readability, and touch interactions on mobile devices
-  - Disabled complex windmill animations on mobile for better performance
-  - Enhanced JavaScript with mobile-specific interactions (outside click, escape key)
-
 ### July 26, 2025 - Logo Integration and Color Scheme Update
 - **Logo Integration**: Replaced text-based logo with actual company logo image across all pages
 - **Color Scheme Update**: Updated entire website color palette to match company branding:

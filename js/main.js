@@ -73,101 +73,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add fade-in class to service cards and feature items
     const serviceCards = document.querySelectorAll('.service-card');
+    const featureItems = document.querySelectorAll('.feature-item');
     
-    // Product Card Redirections
-    setupProductCardRedirections();
-    
-    // Category Click Handlers
-    setupCategoryClickHandlers();
-});
-
-// Product Card Redirection Functions
-function setupProductCardRedirections() {
-    // Get Quote button handlers
-    const getQuoteButtons = document.querySelectorAll('.product-btn');
-    getQuoteButtons.forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.preventDefault();
-            // Get the product title for context
-            const productCard = this.closest('.product-card');
-            const productTitle = productCard ? productCard.querySelector('.product-title')?.textContent : 'Product Inquiry';
-            
-            // Redirect to contact page with product context
-            const contactUrl = `contact.html?product=${encodeURIComponent(productTitle)}`;
-            window.location.href = contactUrl;
-        });
+    serviceCards.forEach(card => {
+        card.classList.add('fade-in');
+        observer.observe(card);
     });
-    
-    // View Complete Range button handlers
-    const viewCompleteButtons = document.querySelectorAll('.view-complete-btn');
-    viewCompleteButtons.forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.preventDefault();
-            // Redirect to services page
-            window.location.href = 'services.html';
-        });
-    });
-}
 
-// Category Click Handlers
-function setupCategoryClickHandlers() {
-    const categoryItems = document.querySelectorAll('.category-item');
-    categoryItems.forEach(item => {
-        item.addEventListener('click', function() {
-            const categoryName = this.querySelector('.category-name')?.textContent;
-            if (categoryName) {
-                // Scroll to products section on same page
-                const productsSection = document.querySelector('.products-section');
-                if (productsSection) {
-                    productsSection.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            }
-        });
+    featureItems.forEach(item => {
+        item.classList.add('fade-in');
+        observer.observe(item);
     });
-}
 
-// Contact Form Enhancement
-function setupContactFormEnhancement() {
-    // Check for product parameter in URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const product = urlParams.get('product');
-    
-    if (product) {
-        // Pre-fill the message field with product inquiry
-        const messageField = document.getElementById('message');
-        if (messageField) {
-            messageField.value = `I am interested in getting a quote for: ${product}\n\nPlease provide more details about pricing, specifications, and availability.`;
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 100) {
+            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            navbar.style.backdropFilter = 'blur(10px)';
+        } else {
+            navbar.style.background = '#fff';
+            navbar.style.backdropFilter = 'none';
         }
-        
-        // Highlight the form
-        const contactForm = document.querySelector('.contact-form');
-        if (contactForm) {
-            contactForm.style.border = '2px solid #f97316';
-            contactForm.style.boxShadow = '0 8px 25px rgba(249, 115, 22, 0.2)';
-        }
-    }
-}
-
-// Initialize contact form enhancement if on contact page
-if (window.location.pathname.includes('contact.html')) {
-    document.addEventListener('DOMContentLoaded', function() {
-        setupContactFormEnhancement();
     });
-}
-
-// Navbar scroll effect
-window.addEventListener('scroll', function() {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-        navbar.style.backdropFilter = 'blur(10px)';
-    } else {
-        navbar.style.background = '#fff';
-        navbar.style.backdropFilter = 'none';
-    }
 });
 
 // Contact Form Validation
